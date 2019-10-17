@@ -1,0 +1,19 @@
+Check the MAC tables
+# show control-cluster logical-switches mac-table 5000
+Check the ARP tables
+# show control-cluster logical-switches arp-table 5000
+
+# show control-cluster logical-routers instance all
+  LR-Id LR-Name Universal Service-Controller Egress-Locale
+  0x1388 default+edge-1 false 192.168.110.201 local
+
+# show control-cluster logical-routers interface-summary 0x1388
+  Interface Type Id IP[]
+  13880000000b vxlan 0x1389 172.16.10.1/24
+  13880000000a vxlan 0x1388 172.16.20.1/24
+  138800000002 vxlan 0x138a 192.168.10.2/29
+
+# show control-cluster logical-routers routes 0x1388
+  Destination Next-Hop[] Preference Locale-Id Source
+  192.168.100.0/24 192.168.10.1 110 00000000-0000-0000-0000-000000000000 CONTROL_VM
+  0.0.0.0/0 192.168.10.1 0 00000000-0000-0000-0000-000000000000 CONTROL_VM
