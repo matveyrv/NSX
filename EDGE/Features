@@ -1,0 +1,7 @@
+The following list describes feature support by interface type (internal and uplink) on an ESG.
+- DHCP: Not supported on uplink interfaces. See the note after this bulleted list.
+- DNS Forwarder: Not supported on uplink interfaces.
+- HA: Not supported on uplink interfaces, requires at least one internal interface.
+- SSL VPN: Listener IP must belong to an uplink interface.
+- IPsec VPN: Local site IP must belong to an uplink interface.
+L2 VPN: Only internal networks can be stretched.
