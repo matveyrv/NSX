@@ -1,0 +1,8 @@
+https://kb.vmware.com/s/article/59332
+login to ESG as root
+Run this command:
+  #vi /etc/sysconfig/modules
+Add a line BEFORE ip_nat_ftp:
+  #nf_conntrack_ftp loose=1
+Save the file.
+Reboot the NSX Edge.
