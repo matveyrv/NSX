@@ -1,9 +1,0 @@
-  #To keep the server connection open between requests, add the following application rule on the Virtual IP
-  #load balancing the Web servers using NTLM authentication:
-add # NTLM authentication and keep the server connection open between requests
-no option http-server-close
-
-  #The client-facing idle timeout can be configured using the application rule 
-timeout http-keepalive [time]
-  #By default the idle timeout is 1 second. This mode is mandatory when an application
-  #requires NTLM authentication.
