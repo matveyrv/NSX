@@ -2,3 +2,6 @@ This feature is disabled by default. To
 enable this feature in a high risk environment, set the REST API 
   #enableSynFloodProtection value to true 
 as part of the Firewall Global Configuration.
+
+
+https://kb.vmware.com/s/article/54527
