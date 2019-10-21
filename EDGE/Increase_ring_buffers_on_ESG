@@ -1,0 +1,9 @@
+login as root
+  Show current ring_buffers config on interface
+  ethtool -g vNic_0
+  
+  Increae Buffers
+  #ethrool -G vNIC_0 rx [value]
+    default is 512
+    max is 096
+   
