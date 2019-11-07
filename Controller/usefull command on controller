@@ -1,3 +1,6 @@
+Check mac-adress-table inside bridge  
+  >show logical-router controller controller-3 dlr edge-13 bridge 1 mac-address-table
+
 Check the MAC tables
 # show control-cluster logical-switches mac-table 5000
 Check the ARP tables
