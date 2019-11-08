@@ -5,5 +5,5 @@ login as root
   Increae Buffers
   #ethrool -G vNIC_0 rx [value]
     default is 512
-    max is 096
+    max is 4096
    
