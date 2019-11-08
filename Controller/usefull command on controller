@@ -4,9 +4,9 @@ Check mac inside vxlan
   >show logical-switch controller master vni 20234 mac
   
 Check the MAC tables
-# show control-cluster logical-switches mac-table 5000
+# show logical-switch controller master vni 30006 mac
 Check the ARP tables
-# show control-cluster logical-switches arp-table 5000
+# show logical-switch controller master vni 30006 arp
 
 # show control-cluster logical-routers instance all
   LR-Id LR-Name Universal Service-Controller Egress-Locale
