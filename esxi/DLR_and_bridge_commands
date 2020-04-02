@@ -1,0 +1,4 @@
+ ### VDR_instance_information
+ net-vdr -l -I
+ ### Get_bridge_information
+ net-vdr --bridge -l edge-№
