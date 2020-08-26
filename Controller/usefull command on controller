@@ -22,3 +22,6 @@ Check the ARP tables
   Destination Next-Hop[] Preference Locale-Id Source
   192.168.100.0/24 192.168.10.1 110 00000000-0000-0000-0000-000000000000 CONTROL_VM
   0.0.0.0/0 192.168.10.1 0 00000000-0000-0000-0000-000000000000 CONTROL_VM
+
+from hypervisor
+net-vdr -b --stats edge-xxxx
