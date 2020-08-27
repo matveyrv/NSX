@@ -1,5 +1,7 @@
 Check mac-adress-table inside bridge  
   >show logical-router controller controller-3 dlr edge-13 bridge 1 mac-address-table
+  >show logical-router controller  master dlr edge-2378 bridge all mac-address-table
+
 Check mac inside vxlan
   >show logical-switch controller master vni 20234 mac
   
