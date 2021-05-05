@@ -2,3 +2,8 @@
  net-vdr -l -I
  ### Get_bridge_information
  net-vdr --bridge -l edge-№
+
+
+net-vdr -I edge-395 --mac-address-table -b 1 
+
+это ведь на хосте с dlr смотреть?
