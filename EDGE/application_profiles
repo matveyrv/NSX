@@ -1,0 +1,11 @@
+acl block_adm path – i /cloud/
+block if block_adm
+
+acl block_api path_beg – i /cloud/api
+block if block_api
+
+acl redirect_http_if_site_is_down nbsrv(vcd-http) eq 0
+redirect location https://shop.rt.ru/werewr/ if redirect_http_if_site_is_down
+
+acl redirect_https_if_site_is_down nbsrv(vcd-https) eq 0
+redirect location https://shop.rt.ru/werewr/ if redirect_https_if_site_is_down
